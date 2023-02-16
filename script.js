@@ -21,3 +21,10 @@ document.addEventListener('click', (e) => {
         document.body.classList.remove("menu-visible");
     };
 })
+
+//-------------Search---------------
+const sTrigger = document.querySelector('.s-trigger');
+const addClass = document.querySelector('.site');
+sTrigger.addEventListener('click', () => {
+    addClass.classList.toggle('showsearch')
+})
