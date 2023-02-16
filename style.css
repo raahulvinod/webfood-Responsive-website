@@ -124,6 +124,34 @@ header nav .menu {
     padding: 2em;
     background-color: var(--primary-color);
     z-index: 1000;
+
+    border-radius: 0 50% 50% 0;
+    transform: translateX(-100%);
+    visibility: hidden;
+    transition: transform .5s, visibility .2s, border-radius .5s .4s;
+}
+.menu.show {
+    transform: translateX(0);
+    visibility: inherit;
+    border-radius: 0;
+}
+body.menu-visible {
+    overflow: hidden;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+}
+.menu-visible .overlay {
+    opacity: 1;
+    visibility: visible;
 }
 header nav .menu ul {
     align-items: flex-start;
@@ -154,6 +182,8 @@ header nav .menu ul li a:hover {
         padding: 0;
         max-width: max-content;
         background-color: transparent;
+        visibility: inherit;
+        transform: none;
     }
     header nav .menu ul li a {
         font-size: inherit;
