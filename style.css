@@ -113,6 +113,29 @@ header nav .icart .number {
 /* -- 01. Header ---------------------------------------------
        a. Responsive Menu 
 -----------------------------*/
+header nav .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 320px;
+    width: 80%;
+    padding: 2em;
+    background-color: var(--primary-color);
+    z-index: 1000;
+}
+header nav .menu ul {
+    align-items: flex-start;
+    line-height: 3em;
+}
+header nav .menu ul li a {
+    font-size: 1.5em;
+    color: var(--dark-color);
+}
+header nav .menu ul li a:hover {
+    color: var(--white-color);
+}
 
 
 @media screen and (min-width: 768px){
@@ -126,4 +149,17 @@ header nav .icart .number {
         margin-right: 2em;
 
     } 
+    header nav .menu {
+        position: relative;
+        padding: 0;
+        max-width: max-content;
+        background-color: transparent;
+    }
+    header nav .menu ul li a {
+        font-size: inherit;
+        color: var(--white-color);
+    }
+    header nav .menu ul li a:hover {
+        color: var(--primary-color);
+    }
 }
