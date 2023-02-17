@@ -33,7 +33,7 @@ sTrigger.addEventListener('click', () => {
 //-----------Slider-------------------
 const sliderThumb = new Swiper('.thumb-nav', {
         spaceBetween: 10,
-        slidePerView: 3,
+        slidesPerView: 3,
         slidesPerGroup: false,
         breakpoints: {
             992: {
