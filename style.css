@@ -208,6 +208,37 @@ header .s-trigger i.ri-close-line,
     background-color: #ff25254a;
 }
 
+/* -- 01. Slider -- */
+main > div {
+    position: relative;
+    padding: 5em 0;
+}
+.hero {
+    color: var(--white-color);
+    text-align: center;
+}
+.hero h1 {
+    font-size: clamp(1.5em, -0.875em + 8.333vw, 3.53m);
+    padding-bottom: 0.5em;
+}
+.hero .text {
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.slider, .slider .main {
+    position: relative;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
 
 @media screen and (min-width: 768px){
     .mobile-only{
