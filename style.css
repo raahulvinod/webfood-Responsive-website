@@ -442,6 +442,21 @@ main > div {
     bottom: -300px;
 }
 
+/* -- 4. Tabbed products ----------
+-----------------------------*/
+.has-bg {
+    margin-top: 10em;
+}
+.tabbed nav {
+    position: sticky;
+    top: 0;
+    margin-bottom: 2em;
+    background-color: var(--white-color);
+    border-bottom: 1px solid var(--light--color);
+    z-index: 10;
+}
+
+
 
 
 
