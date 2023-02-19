@@ -448,7 +448,7 @@ main > div {
 /* -- 4. Tabbed products ----------
 -----------------------------*/
 .has-bg {
-    margin-top: 10em;
+    margin-top: 11em;
 }
 .tabbed nav {
     position: sticky;
@@ -625,7 +625,7 @@ main > div {
 *   06. Blog
 ---------------------------------- */
 .fromblog .bg-dark {
-    top: -10em;
+    top: -11em;
     transform: rotate(180deg);
 }
 .fromblog .post-list ul,
@@ -728,7 +728,7 @@ footer .copyright {
    
  } 
 
- /* :where(.up, .left, .right).animate.this > *:nth-child(2) {
+:where(.up, .left, .right).animate.this > *:nth-child(2) {
     transition-delay: .9s;
  }
  :where(.up, .left, .right).animate.this > *:nth-child(3) {
@@ -742,7 +742,7 @@ footer .copyright {
  }
  :where(.up, .left, .right).animate.this > *:nth-child(6) {
     transition-delay: 1.9s;
- } */ 
+ } 
 
 
 
